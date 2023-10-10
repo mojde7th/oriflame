@@ -1,0 +1,12 @@
+.text-decoration-overline {
+  text-decoration: overline;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+.text-elipsis{text-overflow: ellipsis;
+}
+
