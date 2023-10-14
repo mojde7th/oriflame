@@ -12,7 +12,31 @@
 <body>
     <div class="row">
         <div class="col-8 offset-2">
+            <p class="text-bg-secondary text-wrap p-5 border ">
+                &lt;button class="accordion-button collapsed bg-info text-center text-white d-block" type="button"
+                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"&gt;
+                Accordion Item #3
+                &lt;/button&gt;
 
+            </p>
+            <p class="text-bg-warning text-wrap p-5 border  ">
+                &lt;script&gt;
+                <br>
+                const pi = document.querySelectorAll("[data-bs-toggle=collapse]");
+                <br>
+                pi.forEach(function (p) {
+                p.addEventListener("click", function () {
+                p.style.backgroundColor = "green";
+                p.style.color = "white"
+                
+                })
+                })
+               
+                
+                <br>
+                &lt;/script&gt;
+
+            </p>
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -99,7 +123,7 @@
 
             })
         })
-        const pii = document.querySelectorAll("[class=show]");
+    
 
 
     </script>
