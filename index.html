@@ -11,122 +11,57 @@
 
 <body>
     <div class="row">
-        <div class="col-8 offset-2">
-            <p class="text-bg-secondary text-wrap p-5 border ">
-                &lt;button class="accordion-button collapsed bg-info text-center text-white d-block" type="button"
-                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"&gt;
-                Accordion Item #3
-                &lt;/button&gt;
-
-            </p>
-            <p class="text-bg-warning text-wrap p-5 border  ">
-                &lt;script&gt;
+        <div class="col-8 offset-2 ">
+            <div class="alert alert-warning alert-dismissible text-xxl-start" data-close-pedar="zard">&lt;p class="alert
+                alert-warning"&gt;
                 <br>
-                const pi = document.querySelectorAll("[data-bs-toggle=collapse]");
-                <br>
-                pi.forEach(function (p) {
-                p.addEventListener("click", function () {
-                p.style.backgroundColor = "green";
-                p.style.color = "white"
+                &lt; a href="" class="alert alert-link"&gt;Read-more&lt; /a&gt;
+                &lt; hr&gt;
 
+                <a href="" class="alert alert-link">Read-more</a>
+                <hr>
+                <button class="btn-close" data-bs-dismiss="karim2"></button>
+            </div>
+            <div class="alert alert-dismissible alert-info show fade text-xl-start" data-close-pedar="abi"><br>
+                &lt; div class="alert alert-dismissible alert-info show fade " &gt;
+                <br>
+                &lt; button class="btn-close" data-bs-dismiss="karim"&gt; &lt; /button&gt; &lt; /div&gt;
+                <br>
+                &lt; /div&gt;<br>
+                &lt; script&gt;
+                console.log(document.querySelector("button[data-bs-dismiss=karim]"));
+                <br>
+                document.querySelector("button[data-bs-dismiss=karim]").addEventListener("click",function () {
+                document.querySelector("[data-close-pedar=abi]").style.display="none"
                 })
+                <br>
+                document.querySelector("button[data-bs-dismiss=karim2]").addEventListener("click",function () {
+                document.querySelector("[data-close-pedar=zard]").style.display="none"
                 })
 
-
                 <br>
-                &lt;/script&gt;
+                &lt; /script&gt;
 
-            </p>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne">
-                            Accordion Item #1
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the
-                            <code>.accordion-flush</code> class. This is the first item's accordion body.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo">
-                            Accordion Item #2
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the
-                            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                            this being
-                            filled with some actual content.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-info text-center text-white d-block" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
-                            Accordion Item #3
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the
-                            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                            exciting
-                            happening here in terms of content, but just filling up the space to make it look, at least
-                            at first
-                            glance, a bit more representative of how this would look in a real-world application.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFour">
-                            Accordion Item #4
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the
-                            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                            exciting
-                            happening here in terms of content, but just filling up the space to make it look, at least
-                            at first
-                            glance, a bit more representative of how this would look in a real-world application.
-                        </div>
-                    </div>
-                </div>
+                <button class="btn-close" data-bs-dismiss="karim"></button>
             </div>
         </div>
     </div>
 
     <script src="./bootstrap.bundle.min.js"></script>
     <script>
-        const pi = document.querySelectorAll("[data-bs-toggle=collapse]");
+        console.log(document.querySelector("button[data-bs-dismiss=karim]"));
 
-        pi.forEach(function (p) {
-            p.addEventListener("click", function () {
-                p.style.backgroundColor = "green";
-                p.style.color = "white"
+        document.querySelector("button[data-bs-dismiss=karim]").addEventListener("click", function () {
+            document.querySelector("[data-close-pedar=abi]").style.display = "none"
+        })
 
-            })
+        document.querySelector("button[data-bs-dismiss=karim2]").addEventListener("click", function () {
+            document.querySelector("[data-close-pedar=zard]").style.display = "none"
         })
 
 
-
     </script>
+
 </body>
 
 </html>
