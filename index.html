@@ -1,66 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <div class="row">
         <div class="col-8 offset-2 ">
-            <div class="alert alert-warning alert-dismissible text-xxl-start" data-close-pedar="zard">&lt;p class="alert
-                alert-warning"&gt;
-                <br>
-                &lt; a href="" class="alert alert-link"&gt;Read-more&lt; /a&gt;
-                &lt; hr&gt;
+            <button class="btn btn-dark  m-4 ">Loading
+                <span class="badge bg-danger">7</span>
+            </button>
 
-                <a href="" class="alert alert-link">Read-more</a>
-                <hr>
-                <button class="btn-close" data-bs-dismiss="karim2"></button>
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <button class="btn  btn-warning position-relative  m-4   ">Loading
+                        <span
+                            class="badge rounded-pill position-absolute  bg-success start-100 top-0 translate-middle">10100
+                        </span>
+                    </button>
+                </div>
             </div>
-            <div class="alert alert-dismissible alert-info show fade text-xl-start" data-close-pedar="abi"><br>
-                &lt; div class="alert alert-dismissible alert-info show fade " &gt;
+
+
+            <a href="#" class="badge bg-primary">New! </a>
+
+
+            <hr>
+
+            <nav class="breadcrumb">
+                <a class="breadcrumb-item" href="#">Main</a>
+                <a class="breadcrumb-item" href="#">Sub</a>
+                <a class="breadcrumb-item" href="#">Subsub</a>
+                <span class="breadcrumb-item active">Active</span>
+            </nav>
+
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">دیجی کالا</a></li>
+                    <li class="breadcrumb-item"><a href="#">آیتم</a></li>
+                    <li class="breadcrumb-item active">موبایل</li>
+                </ol>
+            </nav>
+
+        </div>
+        <div class="col-10 offset-1">
+            <p class="text-xxl-end text-bg-warning p-4" style="direction: ltr;font-size: 22px;">
+                &lt;html lang="en" dir="rtl"&gt;
                 <br>
-                &lt; button class="btn-close" data-bs-dismiss="karim"&gt; &lt; /button&gt; &lt; /div&gt;
+                &lt;link rel="stylesheet" href="./bootstrap.rtl.min.css"&gt;
                 <br>
-                &lt; /div&gt;<br>
-                &lt; script&gt;
-                console.log(document.querySelector("button[data-bs-dismiss=karim]"));
+                &lt;div class="row"&gt;
                 <br>
-                document.querySelector("button[data-bs-dismiss=karim]").addEventListener("click",function () {
-                document.querySelector("[data-close-pedar=abi]").style.display="none"
-                })
-                <br>
-                document.querySelector("button[data-bs-dismiss=karim2]").addEventListener("click",function () {
-                document.querySelector("[data-close-pedar=zard]").style.display="none"
-                })
+                &lt;div class="col-8 offset-2 "&gt;
 
                 <br>
-                &lt; /script&gt;
+                &lt;button class="btn btn-dark m-4 "&gt;Loading
+                &lt;span class="badge bg-danger"&gt;7&lt;/span&gt;
+                <br>
+                &lt;/button&gt;
+                <br>
+                &lt;div class="row"&gt;<br>
+                &lt;div class="col-6 offset-3"&gt;<br>
+                &lt;button class="btn btn-warning position-relative m-4 "&gt;
+                <br>Loading
+                &lt;span
+                class="badge rounded-pill position-absolute bg-success start-100 top-0 translate-middle"&gt;<br>10100
+                &lt;/span&gt;
+                &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
 
-                <button class="btn-close" data-bs-dismiss="karim"></button>
-            </div>
+
+                &lt;a href="#" class="badge bg-primary"&gt;New! &lt;/a&gt;
+
+
+                &lt;hr&gt;
+
+                &lt;nav class="breadcrumb"&gt;<br>
+                &lt;a class="breadcrumb-item" href="#"&gt;Main&lt;/a&gt;<br>
+                &lt;a class="breadcrumb-item" href="#"&gt;Sub&lt;/a&gt;<br>
+                &lt;a class="breadcrumb-item" href="#"&gt;Subsub&lt;/a&gt;<br>
+                &lt;span class="breadcrumb-item active"&gt;Active&lt;/span&gt;<br>
+                &lt;/nav&gt;
+
+                &lt;nav &gt;<br>
+                &lt;ol class="breadcrumb"&gt;<br>
+                &lt;li class="breadcrumb-item"&gt;<br>&lt;a href="#"&gt;دیجی کالا&lt;/a&gt;<br>&lt;/li&gt;<br>
+                &lt;li class="breadcrumb-item"&gt;<br>&lt;a href="#"&gt;آیتم&lt;/a&gt;<br>&lt;/li&gt;
+                &lt;li class="breadcrumb-item active"&gt;موبایل&lt;/li&gt;
+                &lt;/ol&gt;
+                &lt;/nav&gt;
+                &lt;p&gt;&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+
+            </p>
         </div>
     </div>
 
+
     <script src="./bootstrap.bundle.min.js"></script>
-    <script>
-        console.log(document.querySelector("button[data-bs-dismiss=karim]"));
 
-        document.querySelector("button[data-bs-dismiss=karim]").addEventListener("click", function () {
-            document.querySelector("[data-close-pedar=abi]").style.display = "none"
-        })
-
-        document.querySelector("button[data-bs-dismiss=karim2]").addEventListener("click", function () {
-            document.querySelector("[data-close-pedar=zard]").style.display = "none"
-        })
-
-
-    </script>
 
 </body>
 
