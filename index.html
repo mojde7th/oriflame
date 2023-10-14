@@ -10,80 +10,99 @@
 </head>
 
 <body>
-    <div class="container-fluid text-center font-monospace">
-        <div class="row font-monospace">
+    <div class="row">
+        <div class="col-8 offset-2">
 
-            <p class="col-8 bg-black text-white   text-justify text-capitalize offset-2 mb-2 p-4 text-center ">
-                &lt;div class="container-fluid text-center font-monospace"&gt;
-                &lt;div class="col-8 offset-2"&gt;
-                <br>
-                &lt;table class="table ..."&gt;
-
-            </p>
-            <P
-                class="text-bg-warning mb-2 text-body-emphasis text-justify text-capitalize  p-4 offset-1 col-10  text-center">
-                &lt;head&gt;link rel="stylesheet" href="./bootstrap.min.css"
-                &lt;/head&gt;
-                <br>
-                &lt;table class="table table-border table-striped table-hover table-dark"&gt;<br>
-                &lt;tr class="table-light"&gt;<br>
-                &lt;td class="table-danger"&gt;
-                FirstName&lt;/td&gt;
-                &lt;td>LastName&lt;/td&gt;
-                &lt;td>FatherName&lt;/td&gt;
-                &lt;td&gt;Age&lt;/td&gt;
-                &lt;td&gt;Email&lt;/td&gt;<br>
-                &lt;/tr&gt;<br>
-                &lt;/table&gt;
-                </P&gt; &lt;P
-                    class="text-bg-success p-4 text-wrap   text-justify text-capitalize offset-2 p-4 col-8 mb-2 text-center"
-                    &gt; script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"><br>
-                &lt;script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">&lt;/script&gt;
-            </P>
-            <div class="col-8 offset-2">
-
-                <table class="table table-border table-striped table-hover table-dark">
-                    <tr class="table-light">
-                        <td class="table-danger">FirstName</td>
-                        <td>LastName</td>
-                        <td>FatherName</td>
-                        <td>Age</td>
-                        <td>Email</td>
-                    </tr>
-                    <tr>
-                        <td>Mojd</td>
-                        <td>E</td>
-                        <td>T</td>
-                        <td>31</td>
-                        <td>mojde7th@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Mojd</td>
-                        <td>E</td>
-                        <td>T</td>
-                        <td>31</td>
-                        <td>mojde7th@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Mojd</td>
-                        <td>E</td>
-                        <td>T</td>
-                        <td>31</td>
-                        <td>mojde7th@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Mojd</td>
-                        <td>E</td>
-                        <td>T</td>
-                        <td>31</td>
-                        <td>mojde7th@gmail.com</td>
-                    </tr>
-                </table>
-
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the
+                            <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the
+                            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                            this being
+                            filled with some actual content.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-info text-center text-white d-block" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the
+                            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                            exciting
+                            happening here in terms of content, but just filling up the space to make it look, at least
+                            at first
+                            glance, a bit more representative of how this would look in a real-world application.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour">
+                            Accordion Item #4
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the
+                            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                            exciting
+                            happening here in terms of content, but just filling up the space to make it look, at least
+                            at first
+                            glance, a bit more representative of how this would look in a real-world application.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const pi = document.querySelectorAll("[data-bs-toggle=collapse]");
+
+        pi.forEach(function (p) {
+            p.addEventListener("click", function () {
+                p.style.backgroundColor = "green";
+                p.style.color = "white"
+
+            })
+        })
+        const pii = document.querySelectorAll("[class=show]");
+
+
+    </script>
 </body>
 
 </html>
