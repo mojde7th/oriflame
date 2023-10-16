@@ -10,136 +10,80 @@
     <link rel="stylesheet" href="./bootstrap-icons.css">
 </head>
 
-<body style="min-height: 2000px;">
+<body style="min-height: 1000px;">
+    <div class="row p-0 m-0 ">
+        <p class="alert alert-success font-monospace col-10 offset-1"> &lt;div class="col-10 offset-1 bg-danger-subtle
+            p-0 gap-1 align-items-xl-center justify-content-lg-around d-flex"
+            style="height: 400px;"&gt;<br>
+            &lt;div class="bg-warning p-5 h-25"&gt;<br>&lt;/div&gt;<br>
+            &lt;div class="bg-warning p-5 h-50"&gt;<br>&lt;/div&gt;<br>
+            &lt;div class="bg-warning p-5 h-75"&gt;<br>&lt;/div&gt;<br>
+            &lt;div class="bg-warning p-5 h-100"&gt;<br>&lt;/div&gt;<br&gt;<br>
+                &lt;/div&gt;<br>
 
-    <div class="container-fluid  w-100 ">
-
-        <div class="row">
-
-
-            <div class="col-12 p-0 d-flex w-100 bg-dark ">
-                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasWithBothOptions"><i class="bi bi-list"></i></button>
-
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
-                    id="offcanvasWithBothOptions">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <p>Try scrolling the rest of the page to see this option in action.</p>
-                    </div>
-                </div>
-                <nav class="navbar navbar-expand-sm bg-dark">
-                    <div class="container-fluid">
-
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link text-white dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                </nav>
-                <hr>
-
-            </div>
-            <hr class="mb-4">
-            <div class="col-8 offset-2">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item w-50" role="presentation">
-                        <button class="nav-link active w-100" id="home-tab" data-bs-toggle="tab"
-                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                            aria-selected="true">Home</button>
-                    </li>
-                    <li class="nav-item w-50" role="presentation">
-                        <button class="nav-link w-100" id="profile-tab" data-bs-toggle="tab"
-                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
-                            aria-selected="false">Profile</button>
-                    </li>
+        </p>
 
 
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade text-justify p-3   show active" id="home-tab-pane" role="tabpanel"
-                        tabindex="0">
-                        Home... Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iure tenetur
-                        consectetur, modi eligendi rem necessitatibus ab hic velit iusto, quis voluptatum facere quas
-                        possimus sunt, accusamus provident. Ipsa, voluptates!</div>
-                    <div class="tab-pane fade p-3 text-justify" id="profile-tab-pane" role="tabpanel" tabindex="0">
-                        profile... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nisi hic dignissimos
-                        cupiditate non odit distinctio eligendi fuga, ullam vel suscipit at unde accusantium laboriosam
-                        pariatur praesentium dolorem error minus!
-                    </div>
-
-
-                </div>
-            </div>
-            <hr>
-            <div class="col-4 offset-4 text-center">
-                <a class="btn btn-dark" data-bs-toggle="offcanvas" href="#offcanvasExample">
-                    Link with href
-                </a>
-
-                <div class="offcanvas offcanvas-end" id="offcanvasExample">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div>
-                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
-                            text, images, lists,
-                            etc.
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
+        <div class="col-10 offset-1 bg-danger-subtle p-0 gap-1 align-items-xl-center justify-content-lg-around d-flex"
+            style="height: 400px;">
+            <div class="bg-warning p-5 h-25"></div>
+            <div class="bg-warning p-5 h-50"></div>
+            <div class="bg-warning p-5 h-75"></div>
+            <div class="bg-warning p-5 h-100"></div>
         </div>
+
+        <hr class="mt-4">
+
+        <p class="alert alert-success font-monospace col-10 offset-1">&lt;div class="col-6 offset-3 d-flex bg-warning
+            gap-1 align-items-center justify-content-around" style="height:
+            200px;"&gt;<br>
+            &lt;div class="bg-info p-5"&gt;<br>&lt;/div&gt;<br>
+            &lt;div class="bg-info p-5"&gt;<br>&lt;/div&gt;<br>
+            &lt;div class="bg-info p-5"&gt;<br>&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+        </p>
+        <div class="col-6 offset-3 d-flex bg-warning   gap-1 align-items-center justify-content-around"
+            style="height: 200px;">
+            <div class="bg-info p-5"></div>
+            <div class="bg-info p-5"></div>
+            <div class="bg-info p-5"></div>
+        </div>
+        <hr class="mt-4">
+        <p class="alert alert-success font-monospace col-10 offset-1">&lt;div class="col-6 offset-3 text-center
+            "&gt;<br>
+            &lt;div class="spinner-border text-secondary m-5 " role="status"&gt;<br>
+            &lt;span class="visually-hidden"&gt;<br>Loading...&lt;/span&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;br&gt;<br>
+            &lt;button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Hooray!"&gt;<br>Hover
+            over
+            me!&lt;/button&gt;<br>
+            &lt;/div&gt;<br>
+
+        </p>
+        <div class="col-6 offset-3 text-center  ">
+            <div class="spinner-border text-secondary m-5 " role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <br>
+            <button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Hooray!">Hover
+                over
+                me!</button>
+        </div>
+        <hr class="mt-4">
     </div>
 
 
-    <script src="./bootstrap.bundle.min.js"></script>
-
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 
 </body>
 
