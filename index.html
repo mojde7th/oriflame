@@ -7,72 +7,137 @@
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
-<body>
+<body style="min-height: 2000px;">
 
     <div class="container-fluid  w-100 ">
 
         <div class="row">
-            <div class="alert alert-success w-75 d-inline-block"> <br>&lt;div class="container-fluid w-100 "&gt;<br>
-                <br>&lt;div class="row"&gt;<br>
-                <br>&lt;div class="col-6 mx-auto"&gt;<br>
-                <br>&lt;button class="btn btn-dark d-block mx-auto mt-4 p-2" id="Modalsuccess"&gt;<br>Show
-                Modal<br>&lt;/button&gt;<br>
-                <br>&lt;div
-                class="modal text-bg-light rounded-2 w-75 h-50 position-absolute top-25 start-50 translate-middle-x m-2
-                "&gt;<br>
-                <br>&lt;div data-bs-target="modaleman"&gt;<br>
-                <br>&lt;p class="p-5 font-monospace text-bg-light text-justify"&gt;<br>lorem....
-                <br>&lt;/p&gt;<br>
-                <br>&lt;button class="btn-close position-absolute end-0 top-0 p-3"&gt;<br><br>&lt;/button&gt;<br>
-                <br>&lt;/div&gt;<br>
-                <br>&lt;/div&gt;<br>
-                <br>&lt;/div&gt;<br>
-                <br>&lt;/div&gt;<br>
-                <br>&lt;/div&gt;<br>
 
-                <br>&lt;script&gt;<br>
-                document.querySelector("#Modalsuccess").addEventListener("click", function () {
-                document.querySelector(".modal").style.display = "block"
-                })
-                document.querySelector(".btn-close").addEventListener("click", function () {
-                document.querySelector(".modal").style.display = "none"
-                })
-                <br>&lt;/script&gt;<br>
-            </div>
-            <div class="col-2 mx-auto d-inline-block">
 
+            <div class="col-12 p-0 d-flex w-100 bg-dark ">
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions"><i class="bi bi-list"></i></button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                    id="offcanvasWithBothOptions">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Try scrolling the rest of the page to see this option in action.</p>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-sm bg-dark">
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-white dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
                 <hr>
-                <button class="btn btn-dark d-block mx-auto mt-4 p-2" id="Modalsuccess">Show Modal</button>
-                <div
-                    class="modal text-bg-light rounded-2   w-75 h-50  position-absolute top-25 start-50 translate-middle-x m-2 ">
-                    <div data-bs-target="modaleman">
-                        <p class="p-5 font-monospace text-bg-light text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia architecto distinctio iste
-                            quaerat magni modi blanditiis aliquid dicta quisquam deserunt? Labore porro ipsum molestias
-                            quaerat, non accusamus iste excepturi. Adipisci?
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia aspernatur
-                            eligendi,
-                            officiis
-                            perferendis sed neque natus repudiandae omnis ex obcaecati sunt id, commodi aut nobis
-                            repellendus
-                            nemo, explicabo reprehenderit dolorum.</p>
-                        <button class="btn-close position-absolute end-0 top-0 p-3"></button>
+
+            </div>
+            <hr class="mb-4">
+            <div class="col-8 offset-2">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item w-50" role="presentation">
+                        <button class="nav-link active w-100" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item w-50" role="presentation">
+                        <button class="nav-link w-100" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false">Profile</button>
+                    </li>
+
+
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade text-justify p-3   show active" id="home-tab-pane" role="tabpanel"
+                        tabindex="0">
+                        Home... Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iure tenetur
+                        consectetur, modi eligendi rem necessitatibus ab hic velit iusto, quis voluptatum facere quas
+                        possimus sunt, accusamus provident. Ipsa, voluptates!</div>
+                    <div class="tab-pane fade p-3 text-justify" id="profile-tab-pane" role="tabpanel" tabindex="0">
+                        profile... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nisi hic dignissimos
+                        cupiditate non odit distinctio eligendi fuga, ullam vel suscipit at unde accusantium laboriosam
+                        pariatur praesentium dolorem error minus!
+                    </div>
+
+
+                </div>
+            </div>
+            <hr>
+            <div class="col-4 offset-4 text-center">
+                <a class="btn btn-dark" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                    Link with href
+                </a>
+
+                <div class="offcanvas offcanvas-end" id="offcanvasExample">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                            text, images, lists,
+                            etc.
+                        </div>
+
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
 
-    <script>
-        document.querySelector("#Modalsuccess").addEventListener("click", function () {
-            document.querySelector(".modal").style.display = "block"
-        })
-        document.querySelector(".btn-close").addEventListener("click", function () {
-            document.querySelector(".modal").style.display = "none"
-        })
-    </script>
+
     <script src="./bootstrap.bundle.min.js"></script>
 
 
